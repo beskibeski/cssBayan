@@ -1,39 +1,113 @@
+
+li {
+    list-style-type: none;
+   }
+   
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+h1{
+    font-size: 2.4rem;
+}
+
+.body{
+    width: 90%;
+    margin: auto;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: azure;
+}
+
+.layout__line{
+    border: solid 0.1vh rgba(0,0,0,0.2);
+    transform: scaleY(0.1);
+}
+
+.layout__block{
+    cursor: pointer;
+}
+
+
+.layout__block:hover .layout__image{
+    height: 40vh; 
+}
+
+.layout__block:hover .layout__icon{    
+    transform: rotate(0deg); 
+}
+
+.layout__container:hover .layout__icon{
+    display: block;
+}
+
+.layout__container:hover .layout__text{
+    color: black;
+}
+
+.layout__text-icon{    
+    display: flex;
+    justify-content: space-between;
+    color: blue;      
+}
+
+.layout__icon{
+   display: none;
+   transform: rotate(45deg);
+}
+
 .layout__block:nth-child(1) .layout__image{
     background: url(monday.jpg);
-    width: 200px;
-    height: 200px;
+    width: 40vw;
+    height: 40vh;    
     background-size: contain;
     background-repeat: no-repeat;
+    margin-bottom: 4vh;
 }
+
+.layout__block:nth-child(1) .layout__text{
+    color: black;
+}
+
+.layout__block:nth-child(1) .layout__icon{   
+    transform: rotate(0deg);
+ }
 
 .layout__block:nth-child(2) .layout__image{
     background: url(tuesday.jpg);
-    width: 200px;
-    height: 200px;
+    width: 40vw;   
     background-size: contain;
     background-repeat: no-repeat;
+    margin-bottom: 4vh;
 }
 
 .layout__block:nth-child(3) .layout__image{
-    background: url(thursday.jpg);
-    width: 200px;
-    height: 200px;
+    background: url(wednesday.jpg);
+    width: 40vw;
     background-size: contain;
     background-repeat: no-repeat;
+    margin-bottom: 4vh;
 }
 
 .layout__block:nth-child(4) .layout__image{
-    background: url(wednesday.jpg);
-    width: 200px;
-    height: 200px;
+    background: url(thursday.jpg);
+    width: 40vw;    
     background-size: contain;
     background-repeat: no-repeat;
+    margin-bottom: 4vh;
 }
 
 .layout__block:nth-child(5) .layout__image{
     background: url(friday.jpg);
-    width: 200px;
-    height: 200px;
+    width: 40vw;    
     background-size: contain;
     background-repeat: no-repeat;
+    margin-bottom: 4vh;
 }
+
+
+
