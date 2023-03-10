@@ -1,0 +1,39 @@
+.layout__block:nth-child(1) .layout__image{
+    background: url(monday.jpg);
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.layout__block:nth-child(2) .layout__image{
+    background: url(tuesday.jpg);
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.layout__block:nth-child(3) .layout__image{
+    background: url(thursday.jpg);
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.layout__block:nth-child(4) .layout__image{
+    background: url(wednesday.jpg);
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.layout__block:nth-child(5) .layout__image{
+    background: url(friday.jpg);
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
