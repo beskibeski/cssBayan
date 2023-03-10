@@ -1,18 +1,12 @@
 
-li {
-    list-style-type: none;
-   }
-   
-ul {
-    margin-left: 0;
-    padding-left: 0;
-}
 
 h1{
     font-size: 2.4rem;
+    margin-block-start: 0.3em;
+    margin-block-end: 0;
 }
 
-.body{
+.body{    
     width: 90%;
     margin: auto;
     padding-left: 10vh;
@@ -30,11 +24,11 @@ h1{
 
 .layout__block{
     cursor: pointer;
+    margin-bottom: 2vh;
 }
 
-
 .layout__block:hover .layout__image{
-    height: 40vh; 
+    height: 30vh; 
 }
 
 .layout__block:hover .layout__icon{    
@@ -52,7 +46,9 @@ h1{
 .layout__text-icon{    
     display: flex;
     justify-content: space-between;
-    color: blue;      
+    color: blue;
+    padding-top: 1vh;
+    padding-bottom: 1vh;      
 }
 
 .layout__icon{
@@ -60,54 +56,106 @@ h1{
    transform: rotate(45deg);
 }
 
+.layout__image{
+    margin: auto;
+    margin-bottom: 1vh;
+}
+
 .layout__block:nth-child(1) .layout__image{
     background: url(monday.jpg);
-    width: 40vw;
-    height: 40vh;    
+    width: 30vw;     
     background-size: contain;
-    background-repeat: no-repeat;
-    margin-bottom: 4vh;
+    background-repeat: no-repeat;   
 }
-
-.layout__block:nth-child(1) .layout__text{
-    color: black;
-}
-
-.layout__block:nth-child(1) .layout__icon{   
-    transform: rotate(0deg);
- }
 
 .layout__block:nth-child(2) .layout__image{
     background: url(tuesday.jpg);
-    width: 40vw;   
+    width: 30vw;   
     background-size: contain;
-    background-repeat: no-repeat;
-    margin-bottom: 4vh;
+    background-repeat: no-repeat;   
 }
 
 .layout__block:nth-child(3) .layout__image{
     background: url(wednesday.jpg);
-    width: 40vw;
+    width: 30vw;
     background-size: contain;
-    background-repeat: no-repeat;
-    margin-bottom: 4vh;
+    background-repeat: no-repeat;    
 }
 
 .layout__block:nth-child(4) .layout__image{
     background: url(thursday.jpg);
-    width: 40vw;    
+    width: 30vw;    
     background-size: contain;
-    background-repeat: no-repeat;
-    margin-bottom: 4vh;
+    background-repeat: no-repeat;    
 }
 
 .layout__block:nth-child(5) .layout__image{
     background: url(friday.jpg);
-    width: 40vw;    
+    width: 30vw;    
     background-size: contain;
-    background-repeat: no-repeat;
-    margin-bottom: 4vh;
+    background-repeat: no-repeat;    
 }
 
+#layout__toggle1, #layout__toggle2, #layout__toggle3, #layout__toggle4, #layout__toggle5{
+    display: none;
+}
 
+#layout__toggle1:checked ~ .layout__image{
+    height: 30vh; 
+}
 
+#layout__toggle2:checked ~ .layout__image{
+    height: 30vh; 
+}
+
+#layout__toggle3:checked ~ .layout__image{
+    height: 30vh; 
+}
+
+#layout__toggle4:checked ~ .layout__image{
+    height: 30vh; 
+}
+
+#layout__toggle5:checked ~ .layout__image{
+    height: 30vh; 
+}
+
+#layout__toggle1:checked ~ .layout__text-icon .layout__text{
+    color: black; 
+}
+
+#layout__toggle2:checked ~ .layout__text-icon .layout__text{
+    color: black; 
+}
+
+#layout__toggle3:checked ~ .layout__text-icon .layout__text{
+    color: black; 
+}
+
+#layout__toggle4:checked ~ .layout__text-icon .layout__text{
+    color: black; 
+}
+
+#layout__toggle5:checked ~ .layout__text-icon .layout__text{
+    color: black; 
+}
+
+#layout__toggle1:checked ~ .layout__text-icon .layout__icon{
+    transform: rotate(0deg);
+}
+
+#layout__toggle2:checked ~ .layout__text-icon .layout__icon{
+    transform: rotate(0deg); 
+}
+
+#layout__toggle3:checked ~ .layout__text-icon .layout__icon{
+    transform: rotate(0deg);
+}
+
+#layout__toggle4:checked ~ .layout__text-icon .layout__icon{
+    transform: rotate(0deg);
+}
+
+#layout__toggle5:checked ~ .layout__text-icon .layout__icon{
+    transform: rotate(0deg);
+}
