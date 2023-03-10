@@ -7,10 +7,8 @@ h1{
 }
 
 .body{    
-    width: 90%;
-    margin: auto;
-    padding-left: 10vh;
-    padding-right: 10vh;
+    width: 80%;
+    margin: auto;    
     font-size: 1.5rem;
     font-weight: 600;
     font-family: 'Courier New', Courier, monospace;
@@ -24,15 +22,11 @@ h1{
 
 .layout__block{
     cursor: pointer;
-    margin-bottom: 2vh;
-}
-
-.layout__block:hover .layout__image{
-    height: 30vh; 
+    margin-bottom: 2vh;    
 }
 
 .layout__block:hover .layout__icon{    
-    transform: rotate(0deg); 
+    transform: rotate(0deg);     
 }
 
 .layout__container:hover .layout__icon{
@@ -48,52 +42,22 @@ h1{
     justify-content: space-between;
     color: blue;
     padding-top: 1vh;
-    padding-bottom: 1vh;      
+    padding-bottom: 1vh;          
 }
 
 .layout__icon{
    display: none;
    transform: rotate(45deg);
+   transition: all .8s;
 }
 
 .layout__image{
     margin: auto;
     margin-bottom: 1vh;
-}
-
-.layout__block:nth-child(1) .layout__image{
-    background: url(monday.jpg);
-    width: 30vw;     
-    background-size: contain;
-    background-repeat: no-repeat;   
-}
-
-.layout__block:nth-child(2) .layout__image{
-    background: url(tuesday.jpg);
-    width: 30vw;   
-    background-size: contain;
-    background-repeat: no-repeat;   
-}
-
-.layout__block:nth-child(3) .layout__image{
-    background: url(wednesday.jpg);
-    width: 30vw;
-    background-size: contain;
-    background-repeat: no-repeat;    
-}
-
-.layout__block:nth-child(4) .layout__image{
-    background: url(thursday.jpg);
-    width: 30vw;    
-    background-size: contain;
-    background-repeat: no-repeat;    
-}
-
-.layout__block:nth-child(5) .layout__image{
-    background: url(friday.jpg);
-    width: 30vw;    
-    background-size: contain;
-    background-repeat: no-repeat;    
+    height: 0vh;
+    width: 0vw;
+    display: block;
+    transition: all .5s;
 }
 
 #layout__toggle1, #layout__toggle2, #layout__toggle3, #layout__toggle4, #layout__toggle5{
@@ -101,23 +65,33 @@ h1{
 }
 
 #layout__toggle1:checked ~ .layout__image{
-    height: 30vh; 
+    height: 30vh;
+    width: 15vw;
+    display: block;           
 }
 
 #layout__toggle2:checked ~ .layout__image{
-    height: 30vh; 
+    height: 30vh;
+    width: 15vw;
+    display: block;      
 }
 
 #layout__toggle3:checked ~ .layout__image{
-    height: 30vh; 
+    height: 30vh;
+    width: 15vw;
+    display: block; 
 }
 
 #layout__toggle4:checked ~ .layout__image{
-    height: 30vh; 
+    height: 30vh;
+    width: 15vw;
+    display: block;          
 }
 
 #layout__toggle5:checked ~ .layout__image{
-    height: 30vh; 
+    height: 30vh;
+    width: 15vw;
+    display: block;       
 }
 
 #layout__toggle1:checked ~ .layout__text-icon .layout__text{
@@ -159,3 +133,11 @@ h1{
 #layout__toggle5:checked ~ .layout__text-icon .layout__icon{
     transform: rotate(0deg);
 }
+
+
+.layout__block:hover .layout__image{   
+    height: 30vh;
+    width: 15vw;   
+    display: block;                                  
+ }
+ 
