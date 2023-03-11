@@ -47,7 +47,7 @@ h1{
 }
 
 .layout__block:hover .layout__image{   
-    height: 30vh;
+    height: 32vh;
     width: 15vw;                          
  }
 
@@ -55,8 +55,12 @@ h1{
     transform: rotate(0);     
 }
 
+.layout__block:active .layout__icon .svg-icon{    
+    fill: blue;     
+}
+
 .layout__block:active {    
-    opacity: 0.5;     
+    opacity: 0.7;        
 }
 
 .layout__container:hover .layout__icon{
@@ -65,6 +69,10 @@ h1{
 
 .layout__container:hover .layout__text{
     color: black;
+}
+
+.layout__block:active .layout__text-icon .layout__text{    
+    color: blue;        
 }
 
 .layout__text-icon{       
@@ -76,7 +84,7 @@ h1{
 }
 
 .layout__text{
-    transition: color .5s ease-in-out;         
+    transition: color .2s ease-in-out;         
 }
 
 .layout__icon{
@@ -102,7 +110,7 @@ h1{
 }
 
 #layout__toggle1:checked ~ .layout__image{
-    height: 33vh;
+    height: 32vh;
     width: 15vw;              
 }
 
@@ -121,7 +129,7 @@ h1{
 }
 
 #layout__toggle2:checked ~ .layout__image{
-    height: 33vh;
+    height: 32vh;
     width: 15vw;        
 }
 
@@ -140,7 +148,7 @@ h1{
 }
 
 #layout__toggle3:checked ~ .layout__image{
-    height: 33vh;
+    height: 32vh;
     width: 15vw;    
 }
 
@@ -159,7 +167,7 @@ h1{
 }
 
 #layout__toggle4:checked ~ .layout__image{
-    height: 33vh;
+    height: 32vh;
     width: 15vw;            
 }
 
@@ -178,7 +186,7 @@ h1{
 }
 
 #layout__toggle5:checked ~ .layout__image{
-    height: 33vh;
+    height: 32vh;
     width: 15vw;         
 }
 
