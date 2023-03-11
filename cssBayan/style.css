@@ -110,7 +110,7 @@ h1{
 @media (max-width: 820px) and (max-height: 1180px) {
     #layout__toggle1:checked ~ .layout__image{
         height: 40vh;
-        width: 40vw;                 
+        width: 55vw;                 
     }
 }
 
@@ -129,7 +129,7 @@ h1{
 @media (max-width: 820px) and (max-height: 1180px) {
     #layout__toggle2:checked ~ .layout__image{
         height: 40vh;
-        width: 40vw;                   
+        width: 55vw;                    
     }
 }
 
@@ -148,7 +148,7 @@ h1{
 @media (max-width: 820px) and (max-height: 1180px) {
     #layout__toggle3:checked ~ .layout__image{
         height: 40vh;
-        width: 40vw;                  
+        width: 55vw;                   
     }
 }
 
@@ -167,7 +167,7 @@ h1{
 @media (max-width: 820px) and (max-height: 1180px) {
     #layout__toggle4:checked ~ .layout__image{
         height: 40vh;
-        width: 40vw;                   
+        width: 55vw;                   
     }
 }
 
@@ -186,7 +186,7 @@ h1{
 @media (max-width: 820px) and (max-height: 1180px) {
     #layout__toggle5:checked ~ .layout__image{
         height: 40vh;
-        width: 40vw;                
+        width: 55vw;                
     }
 }
 
